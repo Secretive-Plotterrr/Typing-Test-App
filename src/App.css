@@ -163,7 +163,6 @@ textarea {
   color: #ffffff;
   resize: none;
   transition: all 0.3s ease;
-  margin: 0 auto;
   display: block;
   text-align: center;
 }
@@ -306,23 +305,47 @@ textarea:disabled {
   margin: 10px 0;
 }
 
-/* Bounce Animation for Stats */
-.bounce {
-  animation: bounce 0.5s ease;
-}
-
-/* Keyframe Animations */
+/* Animations */
 @keyframes glow {
   from {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   }
   to {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
   }
 }
 
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
+/* Media Queries */
+@media (max-width: 600px) {
+  .game-container {
+    padding: 15px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    width: 120px;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  .chooser select, .name-input {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .text-display {
+    min-height: 80px;
+  }
+
+  .stats p, .stats span {
+    font-size: 14px;
+  }
 }
