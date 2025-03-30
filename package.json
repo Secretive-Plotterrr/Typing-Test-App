@@ -1,7 +1,7 @@
 {
   "name": "type",
   "version": "0.1.0",
-  "homepage": "https://Secretive-Plotterrr.github.io/Typing-Test-Game/",
+  "homepage": "https://secretive-plotterrr.github.io/Typing-Test-App/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
